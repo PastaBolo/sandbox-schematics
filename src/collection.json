@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "schematics-angular-sandbox": {
+      "description": "A blank schematic.",
+      "factory": "./schematics-angular-sandbox/index#schematicsAngularSandbox"
+    }
+  }
+}
