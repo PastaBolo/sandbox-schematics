@@ -3,7 +3,7 @@
   "schematics": {
     "schematics-angular-sandbox": {
       "description": "A blank schematic.",
-      "factory": "./schematics-angular-sandbox/index#schematicsAngularSandbox"
+      "factory": "./schematics-angular-sandbox"
     }
   }
 }
