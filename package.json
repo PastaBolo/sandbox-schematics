@@ -4,6 +4,7 @@
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "clean": "git checkout HEAD && git clean -f -d",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [
