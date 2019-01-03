@@ -1,7 +1,7 @@
 import { Rule, chain, externalSchematic } from '@angular-devkit/schematics'
 import { Schema as NgNewOptions } from '@schematics/angular/ng-new/schema'
 
-import { updatePackageJsonScripts } from './package-config'
+import { updatePackageJsonScripts } from '../utility/package-config'
 
 const opt: NgNewOptions = { name: 'sandbox', version: '1', skipInstall: true }
 
