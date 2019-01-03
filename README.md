@@ -52,3 +52,4 @@ npm run clean:launch
 ## Comming next
 
 - Automation of those steps through the ng-add command
+- yarn compatibility
