@@ -2,8 +2,9 @@
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
     "schematics-sandbox": {
-      "description": "A blank schematic.",
-      "factory": "./schematics-sandbox"
+      "description": "A schematic to create a sandbox for schematics development",
+      "factory": "./schematics-sandbox",
+      "schema": "./schematics-sandbox/schema.json"
     }
   }
 }

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsSandbox",
+  "title": "Schematics Sandbox Options Schema",
+  "type": "object",
+  "description": "Adds a sandbox to develop schematics.",
+  "properties": {
+    "name": {
+      "description": "The name of the sandbox",
+      "type": "string",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    }
+  }
+}

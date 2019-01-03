@@ -4,8 +4,12 @@
   "description": "A blank schematics",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "clean": "git checkout HEAD && git clean -f -d",
-    "test": "npm run build && jasmine src/**/*_spec.js"
+    "clean": "git checkout HEAD -- sandbox && git clean -f -d sandbox",
+    "test": "npm run build && jasmine src/**/*_spec.js",
+    "launch": "cd sandbox && ng g schematics-sandbox:schematics-sandbox",
+    "clean:launch": "npm run clean && npm run launch",
+    "build:clean:launch": "npm run build && npm run clean && npm run launch",
+    "link:schematics": "npm link && cd sandbox && npm link schematics-sandbox"
   },
   "keywords": [
     "schematics"

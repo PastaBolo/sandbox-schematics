@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SchematicsSandbox",
+  "title": "Schematics Sandbox Options Schema",
+  "type": "object",
+  "description": "Adds a sandbox to develop schematics.",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the component.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use for the component?"
+    },
+    "inlineStyle": {
+      "description": "When true, includes styles inline in the component.ts file. Only CSS styles can be included inline. By default, an external styles file is created and referenced in the component.ts file.",
+      "type": "boolean",
+      "default": false,
+      "alias": "s"
+    },
+    "changeDetection": {
+      "description": "The change detection strategy to use in the new component.",
+      "enum": ["Default", "OnPush"],
+      "type": "string",
+      "default": "Default",
+      "alias": "c"
+    }
+  },
+  "required": ["name"]
+}
