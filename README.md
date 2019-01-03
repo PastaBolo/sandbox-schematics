@@ -1,15 +1,44 @@
 # Schematics Sandbox
 
-## Install the schematic
+## 1 - Install the schematic
 
 ```bash
 npm install --save-dev pastabolo/schematics-sandbox
 ```
 
-## Run the schematic
+## 2 - Run the schematic
 
 ```bash
-schematics schematics-sandbox:schematics-sandbox
+schematics schematics-sandbox:schematics-sandbox [sandbox-name]
+```
+
+## 3 - Link the schematic
+
+```bash
+npm run link:schematics
+```
+
+## 4 - Commit this initial project
+
+```bash
+git init
+git add -A
+git commit -m "initial commit"
+```
+
+## 5 - Write your schematics
+
+This command resets the sandbox, rebuilds the schematics and launches it
+
+```bash
+npm run build:clean:launch
+```
+
+You can also develop your schematics in watch mode and use only the clean:launch command
+
+```bash
+npm run build -- -w
+npm run clean:launch
 ```
 
 ## Sources
