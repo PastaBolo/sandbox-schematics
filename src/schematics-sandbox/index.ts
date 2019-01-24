@@ -5,6 +5,6 @@ import { updatePackageJsonScripts } from '../utility/package-config'
 
 export default function(options: SchematicsSandboxOptions): Rule {
   options.name = options.name || 'sandbox'
-  const ngNewOptions: NgNewOptions = { name: options.name, version: '1', skipInstall: true, skipGit: true }
+  const ngNewOptions: NgNewOptions = { name: options.name, skipInstall: true, skipGit: true }
   return chain([updatePackageJsonScripts(options), externalSchematic('@schematics/angular', 'ng-new', ngNewOptions)])
 }
